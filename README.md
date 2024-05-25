@@ -11,7 +11,7 @@ Below, I have written a bit of how I discovered this flaw as well as a section r
 
 ## Discovery
 
-Searching for information about the Rutgers SAS Convocation for the Class of 2024, I came accross the official website where details about the graduation ceremony were listed.
+Searching for information about the Rutgers SAS Convocation for the Class of 2024, I came across the official website where details about the graduation ceremony were listed.
 
 | ![image](assets/google-search.png) |
 |:--:|
@@ -31,11 +31,11 @@ Curious how all this data was being acquired and stored, I inspected the network
 |:--:|
 | *https://celebration2024.sas.rutgers.edu/data/graduates.json* |
 
-Clicking on the highlighted link above, I came across sensitive data of all of the graduating students. This file included the RUID affiliated with each student along with their GPAs (anonymized example can be seen below). Given the front-end design, the only values needed were the names, majors, and any honors if achieved; however, the exposure of this superfluous information highlights the clear oversight and significant privacy flaw in the website's design.
+Clicking on the highlighted link above, I came across sensitive data of all of the graduating students. This file included the RUID affiliated with each student along with their GPAs (an anonymized example can be seen below). Given the front-end design, the only values needed were the names, majors, and any honors if achieved; however, the exposure of this superfluous information highlights the clear oversight and significant privacy flaw in the website's design.
 
 | ![image](assets/json-object.png) |
 |:--:|
-| *Anonymized `graduates.json` oject* |
+| *Anonymized `graduates.json` object* |
 
 ## Grade Distribution Analysis
 
